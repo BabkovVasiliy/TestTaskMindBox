@@ -1,4 +1,4 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+п»їusing Microsoft.VisualStudio.TestTools.UnitTesting;
 using AreaCalc;
 using System;
 
@@ -14,7 +14,7 @@ namespace Tests
             double expected = 4 * Math.PI;
 
             Assert.IsTrue(circle.IsValid());
-            Assert.AreEqual(expected, circle.Area(), 0.0001, "Что-то пошло не так");
+            Assert.AreEqual(expected, circle.Area(), 0.0001, "Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє");
         }
 
         [TestMethod]
@@ -24,7 +24,7 @@ namespace Tests
             double expected = -1;
 
             Assert.IsFalse(circle.IsValid());
-            Assert.AreEqual(expected, circle.Area(), 0.0001, "Что-то пошло не так");
+            Assert.AreEqual(expected, circle.Area(), 0.0001, "Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє");
         }
 
         [TestMethod]
@@ -34,7 +34,7 @@ namespace Tests
             double expected = Math.PI;
 
             Assert.IsTrue(circle.IsValid());
-            Assert.AreEqual(expected, circle.Area(), 0.0001, "Что-то пошло не так");
+            Assert.AreEqual(expected, circle.Area(), 0.0001, "Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє");
         }
 
         [TestMethod]
@@ -44,7 +44,7 @@ namespace Tests
             double expected = 0;
 
             Assert.IsTrue(circle.IsValid());
-            Assert.AreEqual(expected, circle.Area(), 0.0001, "Что-то пошло не так");
+            Assert.AreEqual(expected, circle.Area(), 0.0001, "Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє");
         }
 
     }
@@ -59,7 +59,7 @@ namespace Tests
             double expected = -1;
 
             Assert.IsFalse(triangle.IsValid());
-            Assert.AreEqual(expected, triangle.Area(), 0.0001, "Что-то пошло не так");
+            Assert.AreEqual(expected, triangle.Area(), 0.0001, "Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє");
         }
 
         [TestMethod]
@@ -69,7 +69,7 @@ namespace Tests
             bool expected = false;
 
             Assert.IsFalse(triangle.IsValid());
-            Assert.AreEqual(expected, triangle.IsRightTriangle(), "Что-то пошло не так");
+            Assert.AreEqual(expected, triangle.IsRightTriangle(), "Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє");
         }
 
         [TestMethod]
@@ -79,7 +79,7 @@ namespace Tests
             double area = 1.9843;
 
             Assert.IsFalse(triangle.IsRightTriangle());
-            Assert.AreEqual(area, triangle.Area(), 0.0001, "Что-то пошло не так");
+            Assert.AreEqual(area, triangle.Area(), 0.0001, "Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє");
         }
 
         [TestMethod]
@@ -89,7 +89,7 @@ namespace Tests
             double expected = 6;
 
             Assert.IsTrue(triangle.IsValid());
-            Assert.AreEqual(expected, triangle.Area(), 0.0001, "Что-то пошло не так");
+            Assert.AreEqual(expected, triangle.Area(), 0.0001, "Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє");
             Assert.IsTrue(triangle.IsRightTriangle());
         }
     }
@@ -103,7 +103,7 @@ namespace Tests
             Shape unknown = new Triangle(3, 4, 5);
             double expected = 6;
 
-            Assert.AreEqual(expected, unknown.Area(), 0.0001, "Что-то пошло не так");
+            Assert.AreEqual(expected, unknown.Area(), 0.0001, "Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє");
         }
 
         [TestMethod]
@@ -112,7 +112,7 @@ namespace Tests
             Shape unknown = new Circle(1);
             double expected = Math.PI;
 
-            Assert.AreEqual(expected, unknown.Area(), 0.0001, "Что-то пошло не так");
+            Assert.AreEqual(expected, unknown.Area(), 0.0001, "Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє");
         }
     }
 }
