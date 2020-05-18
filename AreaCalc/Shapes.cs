@@ -12,9 +12,10 @@ namespace AreaCalc
     public class Circle : Shape
     {
         private double R;
+
         public Circle(double r)
         {
-             R = r;
+            R = r;
         }
 
         override public double Area()
@@ -28,9 +29,10 @@ namespace AreaCalc
                 return -1;
             }
         }
+
         override public bool IsValid()
         {
-            return R>= 0? true:false; 
+            return R >= 0 ? true : false;
         }
 
     }
@@ -40,6 +42,7 @@ namespace AreaCalc
         private double A;
         private double B;
         private double C;
+
         public Triangle(double a, double b, double c)
         {
             A = a;
@@ -47,6 +50,7 @@ namespace AreaCalc
             C = c;
 
         }
+
         public override double Area()
         {
             double p = (A + B + C) / 2;
@@ -59,28 +63,25 @@ namespace AreaCalc
                 return -1;
             }
         }
+
         public override bool IsValid()
         {
-            return (A > 0 && B > 0 && C > 0 && A + B > C && B + C > A && A + C > B);
+            return ((A > 0) && (B > 0) && (C > 0) &&
+                    (A + B > C) && (B + C > A) && (A + C > B));
         }
 
         public bool IsRightTriangle()
         {
             if (IsValid())
             {
-                return (A * A + B * B == C * C || B * B + C * C == A * A || C * C + A * A == B * B);
+                return ((A * A + B * B == C * C) ||
+                        (B * B + C * C == A * A) ||
+                        (C * C + A * A == B * B) );
             }
             else
             {
                 return false;
             }
         }
-
-
     }
-    
-
-
-
-
 }
